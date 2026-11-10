@@ -27,7 +27,7 @@ Page text that rarely changes (About, Support) is in the `.html` files.
 
 ## After editing
 
-Browsers keep old copies of `js/data.js`, `js/site.js` and `css/style.css` for a while. When you change one, bump the `?v=5` number after its name in every `.html` file (find and replace `?v=5` with `?v=6`) so visitors get the new version right away.
+Browsers keep old copies of `js/data.js`, `js/site.js` and `css/style.css` for a while. When you change one, bump the `?v=6` number after its name in every `.html` file (find and replace `?v=6` with `?v=7`) so visitors get the new version right away.
 
 ## Publish it
 

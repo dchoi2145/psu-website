@@ -86,7 +86,7 @@
   /* ---------- renderers ---------- */
   const newsCard = (n) => `
     <a class="news-card" href="post.html?p=${n.slug}">
-      <img src="${n.image}" alt="${esc(n.alt)}" loading="lazy">
+      ${n.image ? `<img src="${n.image}" alt="${esc(n.alt)}" loading="lazy">` : `<span class="news-noimg"><img src="assets/img/logo-pink.png" alt="" loading="lazy"></span>`}
       <div>
         <time datetime="${n.date}">${fmtDate(n.date)}</time>
         <h3>${esc(n.title)}</h3>
@@ -199,8 +199,9 @@
           <a class="back-link" href="news.html">All news</a>
           <h1>${esc(n.title)}</h1>
           <p class="muted">${fmtDate(n.date, { month: "long", day: "numeric", year: "numeric" })}, by ${esc(n.author)}</p>
-          <img src="${n.image}" alt="${esc(n.alt)}">
+          ${n.image ? `<img src="${n.image}" alt="${esc(n.alt)}">` : ""}
           ${n.body.map((p) => `<p>${esc(p)}</p>`).join("")}
+          ${n.gallery && n.gallery.length ? `<div class="post-gallery">${n.gallery.map((g) => `<img src="${g.src}" alt="${esc(g.alt)}" loading="lazy">`).join("")}</div>` : ""}
         </article>
         <section class="section paper"><div class="wrap"><h2>More from the team</h2><div class="news-grid">${others.map(newsCard).join("")}</div></div></section>`;
     }

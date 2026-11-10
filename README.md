@@ -25,6 +25,10 @@ Almost everything that changes lives in `js/data.js`:
 
 Page text that rarely changes (About, Support) is in the `.html` files.
 
+## After editing
+
+Browsers keep old copies of `js/data.js`, `js/site.js` and `css/style.css` for a while. When you change one, bump the `?v=2` number after its name in every `.html` file (find and replace `?v=2` with `?v=3`) so visitors get the new version right away.
+
 ## Publish it
 
 Upload the folder as-is to any static host (GitHub Pages, Netlify, Cloudflare Pages), then point `pinkunicorns.us` at it.

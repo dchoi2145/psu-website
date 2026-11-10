@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apply | Pink Unicorns 2145</title>
+<meta name="description" content="Apply to join Pink Unicorns, V5RC team 2145, in Northern Virginia.">
+<meta property="og:title" content="Apply | Pink Unicorns 2145">
+<meta property="og:description" content="Apply to join Pink Unicorns, V5RC team 2145, in Northern Virginia.">
+<meta property="og:image" content="assets/img/hero.jpg">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/data.js"></script>
+<script src="js/site.js"></script>
+</head>
+<body>
+<psu-header></psu-header>
+<main id="main">
+<section class="page-hero"><div class="wrap">
+  <h1>Apply to join</h1>
+  <p class="lede">We welcome students in grades 6 to 12 from across Northern Virginia. Applying takes two steps.</p>
+</div></section>
+<section class="section" style="padding-top:1.5rem"><div class="wrap narrow">
+  <ol class="steps">
+    <li><div>
+      <h2>Complete the PSU application</h2>
+      <p>This is the one that counts. We only consider serious candidates who complete the full PSU application.</p>
+      <p class="muted">We're especially looking for students with VEX Robotics experience, C++ skills, or app development experience.</p>
+      <div class="btn-row"><a class="btn btn-pink" data-link="apply" target="_blank" rel="noopener" href="#">Open the PSU application</a></div>
+    </div></li>
+    <li><div>
+      <h2>Tell us who you are</h2>
+      <p>Send this short form so we know to look for your application and how to reach you.</p>
+      <form data-form="interest">
+        <div><label for="fn">First name</label><input id="fn" name="First name" type="text" autocomplete="given-name" required></div>
+        <div><label for="ln">Last name</label><input id="ln" name="Last name" type="text" autocomplete="family-name" required></div>
+        <div><label for="em">Email</label><input id="em" name="Email" type="email" autocomplete="email" required></div>
+        <div><label for="ph">Phone (optional)</label><input id="ph" name="Phone" type="tel" autocomplete="tel"></div>
+        <div class="full"><label for="tm">Current team number and letter</label><input id="tm" name="Current team" type="text" placeholder="e.g. 1234A, or none" required></div>
+        <fieldset class="full"><legend>How did you hear about us?</legend>
+          <div class="radios">
+            <label><input type="radio" name="Heard from" value="Friends"> Friends</label>
+            <label><input type="radio" name="Heard from" value="Social media"> Social media</label>
+            <label><input type="radio" name="Heard from" value="Other"> Other</label>
+          </div>
+        </fieldset>
+        <div class="full"><label for="cm">Comments (optional)</label><textarea id="cm" name="Comments" rows="4"></textarea></div>
+        <div class="hp" aria-hidden="true"><label>Leave this empty<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+        <div class="full"><button class="btn btn-pink" type="submit">Send interest form</button></div>
+        <p class="full form-status" data-status role="status"></p>
+      </form>
+    </div></li>
+  </ol>
+  <p class="muted" style="margin-top:2rem">Questions first? Email <a class="text-link" data-link="email" href="#">pinkunicorns@pinkunicorns.us</a>.</p>
+</div></section>
+</main>
+<psu-footer></psu-footer>
+</body>
+</html>

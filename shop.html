@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop | Pink Unicorns 2145</title>
+<meta name="description" content="Pink Unicorns hoodies, crewnecks and shirts. Show your support for V5RC team 2145.">
+<meta property="og:title" content="Shop | Pink Unicorns 2145">
+<meta property="og:description" content="Pink Unicorns hoodies, crewnecks and shirts. Show your support for V5RC team 2145.">
+<meta property="og:image" content="assets/img/hero.jpg">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/data.js"></script>
+<script src="js/site.js"></script>
+</head>
+<body>
+<psu-header></psu-header>
+<main id="main">
+<section class="page-hero"><div class="wrap">
+  <h1>Shop</h1>
+  <p class="lede">Pink Unicorns hoodies, crewnecks and shirts. Sizes Small to XXXL, with local pick-up.</p>
+</div></section>
+<section class="section"><div class="wrap">
+  <div class="product-grid" data-render="products"></div>
+</div></section>
+
+<section class="section paper" id="order"><div class="wrap split top">
+  <div>
+    <h2>Order merch</h2>
+    <p class="lede">Send us what you'd like and we'll email you to confirm it and arrange payment and local pick-up.</p>
+    <p>No payment is taken on this page. Ordering more than one item? Send the form once for each.</p>
+    <p class="muted">Questions about an order? Email <a class="text-link" data-link="email" href="#">pinkunicorns@pinkunicorns.us</a>.</p>
+  </div>
+  <form data-form="order">
+    <div class="full"><label for="oi">Item</label><select id="oi" name="Item" required></select></div>
+    <div><label for="os">Size</label><select id="os" name="Size" required></select></div>
+    <div><label for="oq">Quantity</label><input id="oq" name="Quantity" type="number" min="1" max="20" value="1" required></div>
+    <div class="full"><label for="on">Name to print on it (optional)</label><input id="on" name="Custom name" type="text" maxlength="40"></div>
+    <div><label for="of">First name</label><input id="of" name="First name" type="text" autocomplete="given-name" required></div>
+    <div><label for="ol">Last name</label><input id="ol" name="Last name" type="text" autocomplete="family-name" required></div>
+    <div><label for="oe">Email</label><input id="oe" name="Email" type="email" autocomplete="email" required></div>
+    <div><label for="op">Phone (optional)</label><input id="op" name="Phone" type="tel" autocomplete="tel"></div>
+    <div class="full"><label for="ot">Notes (optional)</label><textarea id="ot" name="Notes" rows="3"></textarea></div>
+    <div class="hp" aria-hidden="true"><label>Leave this empty<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+    <p class="full order-total">Total <b data-total>$0</b></p>
+    <div class="full"><button class="btn btn-pink" type="submit">Send order request</button></div>
+    <p class="full form-status" data-status role="status"></p>
+  </form>
+</div></section>
+</main>
+<psu-footer></psu-footer>
+</body>
+</html>
